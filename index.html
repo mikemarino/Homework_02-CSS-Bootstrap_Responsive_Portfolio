@@ -5,11 +5,15 @@
     <!-- required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
     <!-- Bootstrap CSS-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-
+   
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -17,156 +21,169 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container mx-auto">
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav mr-auto">
+    <div class="container page-wrapper rounded shadow">
 
-                    <li class="nav-item active my-flex-item">
-                        <a class="nav-link " href="Portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item my-flex-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item my-flex-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                </ul>
-                
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto p-2 mb-2 mb-lg-0">
+                        <li class="socIcon"> <a href="https://twitter.com/marino1820"><img
+                                    src="assets/imgs/twitter.svg" alt="" width="32" height="32"
+                                title="twitter" class="svg icon-white"></a>
+                        </li>
+                        <li class="socIcon"> <a href="https://www.facebook.com/michael.marino.9421/"> <img
+                                src="assets/imgs/facebook.svg" alt="" width="32" height="32"
+                                title="facebook" class="svg"></a>
+                        </li>
+                        <li class="socIcon"> <a href="https://www.linkedin.com/in/michael-marino-137a6011/"> <img
+                                src="assets/imgs/linkedin.svg" alt="" width="32" height="32"
+                                title="slack" class="svg"></a>
+                        </li>
+                        <li class="socIcon"> <a href="https://www.youtube.com/"> <img src="assets/imgs/youtube.svg"
+                                alt="" width="32" height="32"
+                                title="youtube" class="svg"></a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-    <a class="navbar-brand d-none d-lg-flex my-flex-item" href="index.html">Michael Marino</a>
+        </nav>
 
-        
-    <ul class="navbar-nav ml-auto my-flex-item">
+        <section>
 
-                <li class="nav-item "> <img src="assets/imgs/facebook.svg" alt="" width="32" height="32"
-                        title="facebook" class="svg">
-                </li>
-                <li class="nav-item svg"> <img src="assets/imgs/instagram.svg" alt="" width="32" height="32"
-                        title="instagram">
-                </li>
-                <li class="nav-item svg"> <img src="assets/imgs/discord.svg" alt="" width="32" height="32"
-                        title="discord">
-                </li>
-                <li class="nav-item svg"> <img src="assets/imgs/slack.svg" alt="" width="32" height="32" title="slack">
-                </li>
-                <li class="nav-item svg"> <img src="assets/imgs/twitter.svg" alt="" width="32" height="32"
-                        title="twitter">
-                </li>
-                <li class="nav-item svg"> <img src="assets/imgs/youtube.svg" alt="" width="32" height="32"
-                        title="youtube" class="svg"></li>
-                <li class="nav-item svg"> <img src="assets/imgs/file-person-fill.svg" alt="" width="32" height="32"
-                        title="account"></li>
 
-            </ul>
 
-</div>
-</nav>
+            <div class="container col-sm-12" id="heroPanel">
+                <main class="row">
+                    <div class="col-sm-3">
+                        <img src="./assets/imgs/profile-pic.jpg" alt="" id="profile-image" />
+                    </div>
+                    <div class="col-sm-8">
+                        Hello my Name is
+                        <br>
+                        <H1>Michael Marino</H1>
+                        <p>I'm a full-stack web developer (in training) specialized in frontend and backend development for complex,
+                        scalable web apps. I enjoy web development, spending time with my wife, and 3d Printing. I have a facination for technology and computers.</p>
+                        
+                            Want to know how I may help your project? Check out my portfolio and resume.
+                        
+                        <br>
+                        <Br>
+                        <a class="btn btn-success" href="contact.html" role="button">Contact Me!</a>
+                    </div>
+                </main>
+            </div>
 
-    <section class="banner1">
-        <h1>Hello World!</h1>
-        <div class="container d-sm-flex flex-column bg-light">
-            <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta tortor vel urna
-                venenatis viverra. Quisque augue nisi, facilisis ut cursus ac, varius at odio. Vivamus sollicitudin nisi
-                sem, nec pharetra mi blandit finibus. Suspendisse vel quam ut orci placerat commodo ut cursus dui.
-                Maecenas tempus id risus non aliquet. Maecenas at mi suscipit, feugiat arcu a, dapibus sapien. Cras
-                vestibulum leo consectetur feugiat porta. Aliquam erat volutpat. Aenean nec hendrerit libero, id
-                condimentum arcu. Vestibulum euismod quam non cursus viverra. Nullam vestibulum est sed enim
-                sollicitudin aliquam quis vel massa. Morbi vel lectus euismod, tristique tortor quis, mollis lorem.
-                Integer vulputate lobortis eros at congue. Vestibulum eget quam lectus.
 
-                Nulla porttitor ex sit amet arcu tempor, maximus placerat nisl ultricies. Morbi ultricies rutrum
-                ultricies. Quisque venenatis sem id ligula feugiat consectetur. In at risus nulla. Suspendisse placerat
-                hendrerit tellus at condimentum. Quisque sit amet semper erat. Quisque lobortis condimentum libero id
-                placerat. Fusce placerat lorem ac arcu hendrerit, id laoreet massa accumsan. Curabitur porta, eros eu
-                pellentesque rhoncus, leo ante tincidunt lectus, non suscipit risus ex in quam. Integer dictum enim at
-                feugiat tristique. Duis ac purus tortor. Praesent ac sagittis dui, quis tempus mauris. Curabitur iaculis
-                sed dui eget interdum. Morbi consequat mauris quis dolor porttitor, eget semper lectus ultrices. Cras
-                aliquam rutrum accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </section>
+        <section>
+            <div class="container col-sm-10" id="aboutPanel">
+                <main class="row">
 
-                Curabitur sit amet mi augue. Aenean ultricies dictum est sit amet porta. Nullam convallis gravida mauris
-                non tempus. Vestibulum semper quis ante iaculis condimentum. Ut tincidunt lacus ac dictum vehicula.
-                Donec commodo scelerisque justo, sed venenatis urna efficitur eget. In vel luctus elit. Integer ac nibh
-                sit amet enim accumsan vestibulum ut a elit. Morbi libero justo, tempor at pharetra non, pellentesque
-                non arcu. Phasellus et nulla rhoncus, commodo orci eget, luctus tellus. Curabitur magna justo,
-                consectetur vitae est at, efficitur mattis dui. Sed ullamcorper, lectus quis aliquet ornare, felis sem
-                porta neque, et aliquam ante tortor maximus enim. Nam vel dolor vitae ligula bibendum malesuada.
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2>Skills Overview</h2>
+                        <br>
+                        I have more than 5 years experience building rich web applications for clients all over the
+                        world. Below is a quick overview of my main technical skill sets and tools I use. Wan to find
+                        out more about my experience?
+                        <br>
+                        Check out my online resume.
+                    </div>
+                </main>
+            </div>
+        </section>
 
-                Nunc tempor leo at elit pellentesque, eget suscipit metus iaculis. Pellentesque nulla sapien, aliquet id
-                diam rutrum, ultricies aliquet sem. Nunc faucibus tellus vel blandit tempus. Nam vulputate aliquam risus
-                at eleifend. Proin a mi sit amet sem imperdiet dignissim eget sit amet tortor. Morbi faucibus vestibulum
-                convallis. Nam ultrices sem eget orci imperdiet, at semper mauris pharetra. Quisque congue sit amet eros
-                quis euismod.
 
-                Nunc diam mi, aliquet id nisl consectetur, venenatis rutrum enim. Aliquam finibus ex sit amet tortor
-                dictum, sit amet consectetur velit tempus. Fusce risus nunc, feugiat vitae dui sit amet, hendrerit
-                elementum lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Pellentesque facilisis ante vel risus hendrerit vestibulum. Pellentesque vel venenatis sapien,
-                nec porta augue. Proin in lectus dolor. Vivamus et magna auctor, pellentesque elit sit amet, dapibus
-                diam.</div>
-            <hr>
-
+        <div class="card-group">
+            <div class="card">
+                <img src="assets/imgs/frontend.svg" alt="" width="32" height="32" title="frontend"
+                    class="mx-auto circle" id="svg">
+                <div class="card-body">
+                    <h5 class="card-title">Front End</h5>
+                    <p class="card-text">Here is where I will list all the frontend coding languages I learn during Bootcamp.</p>
+                     <ul>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                     </ul>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="assets/imgs/backend.svg" alt="" width="32" height="32" title="backend" class="mx-auto">
+                <div class="card-body">
+                    <h5 class="card-title">Backend</h5>
+                    <p class="card-text">Here is where I will list all the backend coding languages I learn during
+                        Bootcamp.
+                    </p>
+                   
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/imgs/globe.svg" alt="" width="32" height="32" title="other"
+                    class="mx-auto">
+                <div class="card-body">
+                    <h5 class="card-title">Other</h5>
+                    <p class="card-text">This is where I will enter all other other skills I've learned during the Bootcamp.</p>
+                </div>
+            </div>
         </div>
 
-
-
-    </section>
-    <div class="p-2 container">"
-        Nulla porttitor ex sit amet arcu tempor, maximus placerat nisl ultricies. Morbi ultricies rutrum
-        ultricies. Quisque venenatis sem id ligula feugiat consectetur. In at risus nulla. Suspendisse placerat
-        hendrerit tellus at condimentum. Quisque sit amet semper erat. Quisque lobortis condimentum libero id
-        placerat. Fusce placerat lorem ac arcu hendrerit, id laoreet massa accumsan. Curabitur porta, eros eu
-        pellentesque rhoncus, leo ante tincidunt lectus, non suscipit risus ex in quam. Integer dictum enim at
-        feugiat tristique. Duis ac purus tortor. Praesent ac sagittis dui, quis tempus mauris. Curabitur iaculis
-        sed dui eget interdum. Morbi consequat mauris quis dolor porttitor, eget semper lectus ultrices. Cras
-        aliquam rutrum accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-        Curabitur sit amet mi augue. Aenean ultricies dictum est sit amet porta. Nullam convallis gravida mauris
-        non tempus. Vestibulum semper quis ante iaculis condimentum. Ut tincidunt lacus ac dictum vehicula.
-        Donec commodo scelerisque justo, sed venenatis urna efficitur eget. In vel luctus elit. Integer ac nibh
-        sit amet enim accumsan vestibulum ut a elit. Morbi libero justo, tempor at pharetra non, pellentesque
-        non arcu. Phasellus et nulla rhoncus, commodo orci eget, luctus tellus. Curabitur magna justo,
-        consectetur vitae est at, efficitur mattis dui. Sed ullamcorper, lectus quis aliquet ornare, felis sem
-        porta neque, et aliquam a
-        <hr>
     </div>
-
-    <div class="p-2 container"> Nulla porttitor ex sit amet arcu tempor, maximus placerat nisl ultricies. Morbi
-        ultricies rutrum
-        ultricies. Quisque venenatis sem id ligula feugiat consectetur. In at risus nulla. Suspendisse placerat
-        hendrerit tellus at condimentum. Quisque sit amet semper erat. Quisque lobortis condimentum libero id
-        placerat. Fusce placerat lorem ac arcu hendrerit, id laoreet massa accumsan. Curabitur porta, eros eu
-        pellentesque rhoncus, leo ante tincidunt lectus, non suscipit risus ex in quam. Integer dictum enim at
-        feugiat tristique. Duis ac purus tortor. Praesent ac sagittis dui, quis tempus mauris. Curabitur iaculis
-        sed dui eget interdum. Morbi consequat mauris quis dolor porttitor, eget semper lectus ultrices. Cras
-        aliquam rutrum accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        <hr>
-    </div>
-    <hr>
+    <!-- Start of footer -->
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright 2020 Michael Marino
+        </p>
+    </footer>
+    <!-- End of footer -->
 
 
-<footer>
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
 
-
-
-</footer>
-<!-- Bootstrap CDN -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
